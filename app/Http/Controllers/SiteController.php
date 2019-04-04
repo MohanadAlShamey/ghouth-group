@@ -84,7 +84,7 @@ public function about(){
         $email=$request->email;
         $sub=$request->subject;
         $msg=$request->message;
-        Mail::to('redadnan@gmail.com')
+        Mail::to($setting)
             ->send(new OrderShiped($name,$email,$sub,$msg));
         return redirect()->back()->with('success','تم الإرسال بنجاح');
     }

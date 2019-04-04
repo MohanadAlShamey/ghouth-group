@@ -1,6 +1,11 @@
 /*
 animate
 */
+a.link,li.active>a.link{background-color: #376212f0 !important;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border: none;
+}
+
 @keyframes ping {
     0% {
         transform: translateY(0px);
@@ -161,12 +166,12 @@ main.index {
 }
 
 .nav.navbar-nav > li.active > a {
-    background-color: transparent !important;
+    background-color: #376212f0 !important;
     color: #F00 !important;
 }
 
 .nav.navbar-nav > li > a:hover {
-    background-color: transparent !important;
+    background-color: #376212 !important;
     color: #F00 !important;
 }
 

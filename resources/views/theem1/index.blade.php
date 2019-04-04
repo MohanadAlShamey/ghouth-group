@@ -270,16 +270,16 @@
                             <form action="{{url('send')}}" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text" class="form-control font-butros" placeholder="الاسم">
+                                    <input type="text" name="name" class="form-control font-butros" placeholder="الاسم">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control font-butros" placeholder="البريد الإلكتروني">
+                                    <input type="text" name="email" class="form-control font-butros" placeholder="البريد الإلكتروني">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control font-butros" placeholder="الوصف">
+                                    <input type="text" name="subject" class="form-control font-butros" placeholder="الوصف">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="" id="" cols="30" rows="10" class="form-control font-butros"
+                                    <textarea name="message" id="" cols="30" rows="10" class="form-control font-butros"
                                               placeholder="الرسالة"></textarea>
                                 </div>
                                 <div class="form-group">
