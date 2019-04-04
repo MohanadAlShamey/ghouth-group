@@ -1,0 +1,1 @@
+<a class="btn btn-primary" href="{{url('admin/cats/'.$id.'/show')}}">{{trans('en.show')}} <i class="fa fa-search"></i></a>

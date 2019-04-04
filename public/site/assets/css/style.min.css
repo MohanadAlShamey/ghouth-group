@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*!
+ * Theme Name: Pixel
+ * Theme URI: https://www.picalica.trillim.co/pixel
+ * Description: Agency Portfolio Landing Pages
+ * Author: Trillim Team
+ * Author URI: https://www.picalica.com/u/trillimtm
+ * Version: 1.0.0
+ * Created: 12/05/2017
+ *
+ * Copyright (c) 2017 Trillim.
+ */
+ /*!
+ * TABLE OF CONTENT
+ * ------------------------------------------------------------
+ *
+ * 01. BASE
+ * 02. PRELOADER
+ * 03. HEADER
+ * 04. HERO
+ * 05. SERVICES
+ * 06. PORTFOLIO
+ * 07. FACTS
+ * 08. CONTACT
+ * 09. FOOTER
+ * 10. PORTFOLIO SINGLE
+ * 11. MEDIA QUERIES
+ */
+@font-face{font-family:"Dubai W23";src:url(../fonts/DubaiW23-Regular.html) format("woff2"),url(../fonts/DubaiW23-Regular.woff) format("woff"),url(../fonts/DubaiW23-Regular.eot),url(../fonts/DubaiW23-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:"Dubai W23 Bold";src:url(../fonts/DubaiW23-Bold.html) format("woff2"),url(../fonts/DubaiW23-Bold.woff) format("woff"),url(../fonts/DubaiW23-Bold.eot),url(../fonts/DubaiW23-Bold.ttf) format("truetype");font-weight:400;font-style:normal}
+a,a:hover{transition:all .2s ease-in-out}
+body{font-family:"Dubai W23",tahoma,arial;font-size:16px;font-weight:400;font-style:normal;text-align:right;overflow-y:hidden;position:relative}
+.btn-lg,.font-weight-bold,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:"Dubai W23 Bold",tahoma,arial;font-weight:600}
+.lead{line-height:2rem}
+.ltr{direction:ltr!important}
+.rtl{direction:rtl!important}
+.mouse{display:block;width:1.5rem;height:2.5rem;border:1px solid #fff;border-radius:1.75rem;animation:mouse 1s;transition:all .5s linear}
+.mouse-finger{display:block;background-color:#fff;width:4px;height:4px;margin:4px auto;border-radius:4px;animation:mouse-finger 2s infinite}
+@keyframes mouse{50%{opacity:1}
+75%{opacity:.5;transform:translateY(-24px)}
+100%{opacity:.1;transform:translateY(0)}}
+@keyframes mouse-finger{0%{opacity:.1}
+25%{opacity:.5}
+50%{opacity:1}
+75%{opacity:.5}
+100%{opacity:.1;transform:translateY(24px)}}
+.bg-facebook,.bg-facebook-hover,.bg-instagram,.bg-instagram-hover,.bg-twitter,.bg-twitter-hover,.bg-youtube,.bg-youtube-hover{transition:all .2s ease-in-out}
+.bg-facebook,.bg-facebook-hover.active,.bg-facebook-hover.active:hover,.bg-facebook-hover:hover,.bg-facebook.active,.bg-facebook.active:hover,.bg-facebook:hover{background-color:#3664a2!important;color:#fff!important}
+.bg-twitter,.bg-twitter-hover.active,.bg-twitter-hover.active:hover,.bg-twitter-hover:hover,.bg-twitter.active,.bg-twitter.active:hover,.bg-twitter:hover{background-color:#1da1f2!important;color:#fff!important}
+.bg-instagram,.bg-instagram-hover.active,.bg-instagram-hover.active:hover,.bg-instagram-hover:hover,.bg-instagram.active,.bg-instagram.active:hover,.bg-instagram:hover{background-color:#bc3391!important;color:#fff!important}
+.bg-youtube,.bg-youtube-hover.active,.bg-youtube-hover.active:hover,.bg-youtube-hover:hover,.bg-youtube.active,.bg-youtube.active:hover,.bg-youtube:hover{background-color:red!important;color:#fff!important}
+.btn-outline-primary:hover{transform:translateY(-6px)}
+.section{padding-top:64px;padding-bottom:64px}
+.section-title{margin-bottom:.75rem}
+.section-subtitle{font-size:1.15rem}
+.preloader{position:fixed;top:0;left:0;bottom:0;right:0;height:100%;width:100%;z-index:2000}
+.header{margin-top:2rem}
+.header-navbar{font-family:"Dubai W23 Bold"}
+.header-navbar .navbar-collapse .navbar-nav{margin-top:0}
+.header-navbar .navbar-collapse .navbar-nav .nav-link{padding-right:1.25rem;padding-left:1.25rem;text-align:center}
+.hero{position:relative;background-size:cover;background-position:center center;z-index:10;min-height:100vh}
+.hero:after{content:" ";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1}
+.hero-body{height:100%;margin-top:4rem}
+.hero-title{margin-bottom:1rem;line-height:1.5;font-size:3.5rem}
+.hero-subtitle{max-width:768px;margin-right:auto;margin-left:auto;margin-bottom:3.5rem;line-height:2.1rem}
+.hero-btn{border-radius:3.125rem;border-width:2px;padding-right:3rem;padding-left:3rem}
+.hero-footer{position:absolute;bottom:1.5rem}
+.hero-scroll{position:relative}
+.service{margin-bottom:2rem}
+.service-icon{position:relative;display:inline-block;height:6em;width:6em;margin-bottom:1.75em}
+.service-icon i{height:100%;font-size:3rem}
+.service-title{margin-bottom:.9rem}
+.service-description{font-size:14px;max-width:250px;margin-bottom:2rem;margin-right:auto;margin-left:auto;line-height:1.25rem}
+.services .section-footer{max-width:576px;margin:auto}
+.services .section-footer p{margin:0}
+.services .section-footer a{border-width:2px;padding-right:3rem;padding-left:3rem;border-radius:50px}
+.portfolio-filter{margin:0;padding:0}
+.portfolio-filter .filter-item{margin:0}
+.portfolio-filter .filter-link{margin:auto .5rem;padding:.17rem 1rem}
+.portfolio-items>div>div{margin-bottom:30px}
+.portfolio-item{transition:all .55s ease;transition:all .55s ease;margin-bottom:0;height:100%}
+.portfolio-item:hover{transform:translateY(-6px)}
+.portfolio-link{height:100%;width:100%;transition:all .3s ease-in-out}
+.portfolio-link:hover .portfolio-meta{opacity:1}
+.portfolio-item .figure{margin:0;position:relative;width:100%;height:100%}
+.portfolio-img{margin:0}
+.portfolio-meta{opacity:0;position:absolute;height:100%;top:0;right:0;bottom:0;left:0;z-index:1;border:4px solid #E2E2E3}
+.portfolio-meta:before{content:" ";height:100%;position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1}
+.facts{background-size:cover;background-position:center center;position:relative;z-index:1;height:100%}
+.facts:after{content:" ";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1}
+.contact-icon{width:64px;text-align:center}
+.contact-icon i{font-size:3rem}
+.contact-content{margin-bottom:.5rem}
+.contact-field{border-width:2px}
+.contact-map{margin-right:1rem;border:2px solid #E2E2E3}
+.footer-nav{margin:0;padding:0}
+.footer-nav .list-inline-item{margin:0}
+.footer-nav-link{font-family:"Dubai W23 Bold";padding-right:1.25rem;padding-left:1.25rem}
+.footer-nav-link:hover{text-decoration:none}
+.footer-social{margin:0;padding:0}
+.footer-social .list-inline-item{text-align:center;margin:0}
+.footer-social-link{height:2.5rem;width:2.5rem;display:block;border-radius:100%;padding:5px;font-size:1.25rem;margin-right:.25rem;margin-left:.25rem}
+.footer-social-link:hover{text-decoration:none}
+.footer-social-link i{vertical-align:middle}
+.footer hr{margin-top:1.5rem}
+.footer-copyright a{padding-right:.1rem;text-decoration:none}
+.portfolio-single{padding:0!important}
+.portfolio-single .modal-dialog{min-width:100%;min-height:100%;margin:0}
+.portfolio-single .modal-content{min-height:100vh;border-radius:0}
+.portfolio-single-header{padding-left:2rem;padding-bottom:0;border-color:transparent}
+.portfolio-single-close.close{padding:0;margin:0}
+.portfolio-single-title{margin-bottom:2rem}
+@media (max-width:768px){.section-title{font-size:2rem}
+.section-subtitle{font-size:1rem}
+.hero{padding-bottom:2rem}
+.header{margin-top:1rem}
+.hero-body{margin-top:6rem}
+.hero-title{font-size:2.5rem;margin-bottom:.5rem;margin-top:5rem}
+.hero-subtitle{margin-bottom:3.5rem;font-size:1.15rem;line-height:1.65}
+.hero-footer{bottom:.5rem}
+.service{margin-bottom:4rem}
+.services .section-footer p{margin-bottom:2rem}
+.portfolio-filter .filter-item{margin:0;margin-bottom:1rem}
+.fact{margin-top:1rem;margin-bottom:1rem}
+.fact-amount{font-size:2.75rem;margin:0}
+.fact-label{font-size:1.5rem}}
+@media (max-width:992px){.header-navbar .navbar-collapse .navbar-nav{margin-top:2rem}
+.contact-form{margin-bottom:2rem}
+.contact-map{margin:0;margin-top:1rem}
+.footer-logo{margin-bottom:1rem}
+.footer-nav{margin-top:1rem}
+.footer-nav .list-inline-item{display:block;padding-top:.5rem;padding-bottom:.5rem}
+.footer-nav-link{padding-top:.5rem;padding-bottom:.5rem}
+.footer-social{margin-top:1rem}}

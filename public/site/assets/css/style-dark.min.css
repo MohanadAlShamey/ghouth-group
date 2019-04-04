@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body{background-color:#161722;color:#fff}
+.mouse{border-color:#E2E2E3}
+.mouse-finger{background-color:#F1F1F1}
+.btn-secondary{color:#fff;background-color:#8B8B91;border-color:#8B8B91}
+.btn-secondary:hover{color:#fff;background-color:#A8A8AC;border-color:#A8A8AC}
+.btn-secondary.focus,.btn-secondary:focus{box-shadow:0 0 0 .2rem rgba(139,139,145,.5)}
+.btn-secondary.disabled,.btn-secondary:disabled{background-color:#8B8B91;border-color:#8B8B91}
+.btn-secondary:not([disabled]):not(.disabled).active,.btn-secondary:not([disabled]):not(.disabled):active,.show>.btn-secondary.dropdown-toggle{color:#fff;background-color:#A8A8AC;border-color:#A8A8AC;box-shadow:0 0 0 .2rem rgba(139,139,145,.5)}
+.bg-dark{background-color:#33343E!important}
+a.bg-dark:focus,a.bg-dark:hover{background-color:#505159!important}
+.bg-primary{background-color:#161722!important}
+a.bg-primary:focus,a.bg-primary:hover{background-color:#33343E!important}
+.bg-secondary{background-color:#8B8B91!important}
+a.bg-secondary:focus,a.bg-secondary:hover{background-color:#A8A8AC!important}
+.text-dark{color:#161722!important}
+a.text-dark:focus,a.text-dark:hover{color:#33343E!important}
+.text-primary{color:#161722!important}
+a.text-primary:focus,a.text-primary:hover{color:#33343E!important}
+.text-secondary{color:#8B8B91!important}
+a.text-secondary:focus,a.text-secondary:hover{color:#A8A8AC!important}
+.preloader{background-color:#161722}
+.preloader-item>div{background-color:#fff}
+.header-navbar .navbar-toggler{color:#fff;border-color:#fff}
+.header-navbar .navbar-collapse .navbar-nav .nav-link{color:#fff}
+.header-navbar .navbar-collapse .navbar-nav .nav-link.active,.header-navbar .navbar-collapse .navbar-nav .nav-link.active:hover,.header-navbar .navbar-collapse .navbar-nav .nav-link:hover{color:#8B8B91}
+.hero{background-color:#161722;background-image:url(../img/bg/christopher-gower-291246.jpg)}
+.hero:after{content:" ";background-color:rgba(22,23,34,.8)}
+.services{background-color:#33343E}
+.service-icon{box-shadow:rgba(22,23,34,.5)8px 8px 16px -4px}
+.portfolio-item{background-color:#D5D6D8;color:#333}
+.portfolio-item:hover{box-shadow:rgba(22,23,34,.2)0 32px 48px -8px}
+.portfolio-meta{border-color:#E2E2E3}
+.portfolio-meta:before{background-color:rgba(255,255,255,.96)}
+.facts{background-color:#161722;background-image:url(../img/bg/kobu-agency-387557.jpg)}
+.facts:after{content:" ";background-color:rgba(22,23,34,.8)}
+.contact-field,.contact-map{border-color:#E2E2E3}
+.footer-nav-link{color:#fff}
+.footer-nav-link.active,.footer-nav-link.active:hover,.footer-nav-link:hover{color:#8B8B91}
+.footer-social-link{background-color:transparent;color:#8B8B91}
+.footer-social-link.active,.footer-social-link.active:hover,.footer-social-link:hover{background-color:#fff}
+.footer hr{border-color:#505159}
+.bg-light{background-color:#F1F1F1!important}

@@ -1,0 +1,1 @@
+<a class="btn btn-danger" href="{{url('admin/posts/'.$id.'/delete')}}">{{trans('en.delete')}} <i class="fa fa-remove"></i></a>

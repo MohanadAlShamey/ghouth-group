@@ -1,0 +1,1 @@
+<a class="btn btn-info" href="{!! url('admin/posts/'.$id.'/edit') !!}">{!! trans('en.edit') !!} <i class="fa fa-edit"></i></a>
